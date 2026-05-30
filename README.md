@@ -123,6 +123,3 @@ fn ana_fonksiyon() {
     return sonuc;
 }
 ```
-## Lisans
-
-MİT LİSANS
