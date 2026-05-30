@@ -1,6 +1,6 @@
-# RTA++ Compiler v3.0
+# R+ Compiler v3.0
 
-RTA++ programlama dilini x86-64 NASM assembly'ye dönüştüren bir derleyici.
+R+ programlama dilini x86-64 NASM assembly'ye dönüştüren bir derleyici.
 
 ## Mimarı
 
