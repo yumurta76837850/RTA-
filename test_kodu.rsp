@@ -1,0 +1,97 @@
+// ========================================================
+// SENTINEL COMPANY - R+ (.rsp) BÜYÜK PROJE ÖRNEĞİ
+// Proje: SGU Kripto Analizör & Gelişmiş Hesap Makinesi
+// ========================================================
+
+use std::net::TcpStream;
+use std::string::String;
+
+fn siber_giriş_ekranı() {
+    let mut sistem_aktif = 1;
+    let baslangic_mesaji = String::from("--- Sentinel Company R+ Hesaplama Motoru ---");
+    
+    println!("Sistem Yukleniyor...");
+    println!("Gis Kontrol Ediliyor...");
+    
+    return sistem_aktif;
+}
+
+fn toplama_islemi() {
+    let mut sayi1 = 500;
+    let mut sayi2 = 250;
+    let mut sonuc = 0;
+    
+    sonuc = sayi1 + sayi2;
+    
+    println!("Toplama Islemi Basariyla Yapildi.");
+    return sonuc;
+}
+
+fn cikarma_islemi() {
+    let mut matris_boyutu = 1000;
+    let mut temizlenen_alan = 450;
+    let mut kalan_hafiza = 0;
+    
+    kalan_hafiza = matris_boyutu - temizlenen_alan;
+    
+    println!("Hafiza Cikarma Islemi Tamamlandi.");
+    return kalan_hafiza;
+}
+
+fn kripto_xor_simulasyon() {
+    let mut ham_veri = 120;
+    let mut anahtar_key = 35;
+    let mut sifreli_veri = 0;
+    
+    // Basit bir siber güvenlik matematiksel kaydırma simülasyonu
+    sifreli_veri = ham_veri + anahtar_key;
+    
+    println!("Kripto Veri Hesaplamasi Yapildi.");
+    return sifreli_veri;
+}
+
+fn risk_gostergesi_hesapla() {
+    let mut ag_trafigi = 1850;
+    let mut limit_degeri = 1500;
+    let mut alarm_durumu = 0;
+    
+    if ag_trafigi > limit_degeri {
+        alarm_durumu = 1;
+        println!("UYARI: Limit Degeri Asildi!");
+        return alarm_durumu;
+    }
+    
+    let guvenli_kod = 0;
+    return guvenli_kod;
+}
+
+fn ana_fonksiyon() {
+    // 1. Adım: Giriş ekranını tetikle
+    let mut durum = 0;
+    durum = siber_giriş_ekranı();
+    
+    // 2. Adım: Hesap makinesi modüllerini çalıştır
+    let mut toplam_sonuc = 0;
+    toplam_sonuc = toplama_islemi();
+    
+    let mut kalan_bellek = 0;
+    kalan_bellek = cikarma_islemi();
+    
+    // 3. Adım: Kripto ve Güvenlik Hesaplamalarını Yap
+    let mut gizli_kod = 0;
+    gizli_kod = kripto_xor_simulasyon();
+    
+    let mut kritik_risk = 0;
+    kritik_risk = risk_gostergesi_hesapla();
+    
+    // 4. Adım: Genel durum değerlendirmesi (Match)
+    match kritik_risk {
+        1 => { println!("Kritik Risk: 1 (Yuksek)"); }
+        0 => { println!("Kritik Risk: 0 (Dusuk)"); }
+    }
+    
+    println!("Sentinel R+ Tum Hesaplamalari Bitirdi.");
+    
+    let mut program_sonucu = 1;
+    return program_sonucu;
+}

@@ -1,0 +1,33 @@
+// ========================================================
+// SENTINEL COMPANY - R+ Fibonacci Ornegi
+// Kullanim: python compiler.py examples/fibonacci.rsp
+// ========================================================
+
+fn fibonacci(n) {
+    let mut a = 0;
+    let mut b = 1;
+    let mut temp = 0;
+
+    while n > 0 {
+        temp = a + b;
+        a = b;
+        b = temp;
+        n = n - 1;
+    }
+
+    return a;
+}
+
+fn ana_fonksiyon() {
+    let mut sonuc = 0;
+    sonuc = fibonacci(10);
+
+    println!("Fibonacci(10) sonucu:");
+
+    match sonuc {
+        55 => { println!("Dogru! Fibonacci(10) = 55"); }
+        0 => { println!("Hata: Fibonacci hesabi basarisiz"); }
+    }
+
+    return sonuc;
+}

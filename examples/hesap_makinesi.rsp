@@ -1,0 +1,50 @@
+// ========================================================
+// SENTINEL COMPANY - R+ Gelismis Hesap Makinesi
+// ========================================================
+
+fn topla(a, b) {
+    let mut sonuc = a + b;
+    println!("Toplama:");
+    return sonuc;
+}
+
+fn cikar(a, b) {
+    let mut sonuc = a - b;
+    println!("Cikarma:");
+    return sonuc;
+}
+
+fn carp(a, b) {
+    let mut sonuc = a * b;
+    println!("Carpma:");
+    return sonuc;
+}
+
+fn bol(a, b) {
+    let mut sonuc = 0;
+    if b > 0 {
+        sonuc = a / b;
+    } else {
+        println!("HATA: Sifira bolum!");
+        return 0;
+    }
+    println!("Bolme:");
+    return sonuc;
+}
+
+fn ana_fonksiyon() {
+    let mut x = 0;
+    let mut y = 0;
+    let mut sonuc = 0;
+
+    x = 100;
+    y = 25;
+
+    sonuc = topla(x, y);
+    sonuc = cikar(x, y);
+    sonuc = carp(x, y);
+    sonuc = bol(x, y);
+
+    println!("Hesap Makinesi Tamamlandi.");
+    return sonuc;
+}

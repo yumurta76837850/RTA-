@@ -1,0 +1,41 @@
+services:
+  rplus-compiler:
+    build: .
+    image: sentinel/rplus-compiler:latest
+    container_name: rplus-compiler
+    volumes:
+      - .:/app
+    entrypoint: ["python", "compiler.py"]
+    working_dir: /app
+
+  rplus-build:
+    build: .
+    image: sentinel/rplus-compiler:latest
+    container_name: rplus-build
+    volumes:
+      - .:/app
+    entrypoint: >
+      sh -c "python compiler.py /app/test_kodu.rsp &&
+             nasm -f elf64 /app/test_kodu.asm -o /app/test_kodu.o &&
+             ld /app/test_kodu.o -o /app/test_kodu"
+    working_dir: /app
+
+  rplus-test:
+    build: .
+    image: sentinel/rplus-compiler:latest
+    container_name: rplus-test
+    volumes:
+      - .:/app
+    entrypoint: ["python", "tests/test_compiler.py"]
+    working_dir: /app
+
+  rplus-shell:
+    build: .
+    image: sentinel/rplus-compiler:latest
+    container_name: rplus-shell
+    volumes:
+      - .:/app
+    entrypoint: ["/bin/bash"]
+    working_dir: /app
+    stdin_open: true
+    tty: true
