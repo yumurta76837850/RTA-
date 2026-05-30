@@ -1,6 +1,6 @@
-# SENTINEL COMPANY - R+ Compiler v3.0
+# RTA++ Compiler v3.0
 
-R+ programlama dilini x86-64 NASM assembly'ye dönüştüren bir derleyici.
+RTA++ programlama dilini x86-64 NASM assembly'ye dönüştüren bir derleyici.
 
 ## Mimarı
 
@@ -133,4 +133,4 @@ fn ana_fonksiyon() {
 
 ## Lisans
 
-SGU Özel Yazılım - SENTINEL COMPANY
+MİT LİSANS
