@@ -123,14 +123,6 @@ fn ana_fonksiyon() {
     return sonuc;
 }
 ```
-
-## VS Code Desteği
-
-`vs-code-eklenti/` klasörünü VS Code'a yükleyin:
-- Sözdizimi vurgulama (syntax highlighting)
-- Kod parçacıkları (snippets)
-- Otomatik kapanma ve girintileme
-
 ## Lisans
 
 MİT LİSANS
